@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+ images: {
+    domains: [
+      "natureconservancy-h.assetsadobe.com",
+      "images.newscientist.com",
+      "hips.hearstapps.com",
+    ],
+  },
 };
 
 export default nextConfig;
