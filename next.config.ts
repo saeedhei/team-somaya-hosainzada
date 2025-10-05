@@ -1,11 +1,20 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
- images: {
-    domains: [
-      "natureconservancy-h.assetsadobe.com",
-      "images.newscientist.com",
-      "hips.hearstapps.com",
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "natureconservancy-h.assetsadobe.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.newscientist.com",
+      },
+      {
+        protocol: "https",
+        hostname: "hips.hearstapps.com",
+      },
     ],
   },
 };

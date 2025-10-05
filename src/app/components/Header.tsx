@@ -57,37 +57,43 @@ export default function Header() {
         </nav>
 
         {/* منوی موبایل */}
-        <ul
+        {/* <ul
           className={`absolute top-16 left-0 right-0 bg-blue-900 text-white flex-col text-center transition-all duration-300 ease-in-out md:hidden ${
             isMobileMenuOpen ? "flex" : "hidden"
           }`}
         >
-          <li>
-            <a href="#" className="block py-4 hover:bg-blue-800">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" className="block py-4 hover:bg-blue-800">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className="block py-4 hover:bg-blue-800">
-              Services
-            </a>
-          </li>
-          <li>
-            <a href="#" className="block py-4 hover:bg-blue-800">
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" className="block py-4 hover:bg-blue-800">
-              Contact
-            </a>
-          </li>
-        </ul>
+        </ul> */}
+        <ul
+  className={`md:hidden flex flex-col text-center bg-blue-900 text-white transition-all duration-300 ease-in-out ${
+    isMobileMenuOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
+  }`}
+>
+  <li>
+    <a href="#" className="block py-4 hover:bg-blue-800">
+      Home
+    </a>
+  </li>
+  <li>
+    <a href="#" className="block py-4 hover:bg-blue-800">
+      About
+    </a>
+  </li>
+  <li>
+    <a href="#" className="block py-4 hover:bg-blue-800">
+      Services
+    </a>
+  </li>
+  <li>
+    <a href="#" className="block py-4 hover:bg-blue-800">
+      Products
+    </a>
+  </li>
+  <li>
+    <a href="#" className="block py-4 hover:bg-blue-800">
+      Contact
+    </a>
+  </li>
+</ul>
     </header>
   );
 }
