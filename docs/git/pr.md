@@ -1,3 +1,3 @@
 git add .
-git commit -m "global type added"
+git commit -m "header updated"
 git push origin main 
