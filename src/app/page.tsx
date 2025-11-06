@@ -1,33 +1,9 @@
 import Image from "next/image";
 
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
-
-export default async function UsersPage() {
-  const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-  await sleep(2000);
-
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const users: User[] = await res.json();
-
+export default function Home() {
   return (
     <div className="font-sans min-h-screen bg-blue-500">
       <div className="grid items-center justify-items-center p-8 pb-20 gap-16 sm:p-20">
-        {/* Skeleton */}
-        <div className="p-4 w-full">
-          {users.map((user) => (
-            <div
-              key={user.id}
-              className="border-b py-2 flex flex-col space-y-2"
-            >
-              <h2 className="font-bold text-lg leading-snug">{user.name}</h2>
-              <p className="text-sm text-gray-600">{user.email}</p>
-            </div>
-          ))}
-        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
           {/* Left Section */}
           <div className="bg-white p-4 rounded shadow-md">
