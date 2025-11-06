@@ -12,7 +12,7 @@ Would you like to use App Router? (recommended) Yes
 Would you like to use Turbopack? (recommended) Yes
 Would you like to customize the import alias (`@/*` by default)? No
 
-4- where there is package.json, is root. We should go to
+4- where there is package.json, is root. We should go to there
 for installing dependencies for a Node.js project  npm install (for each project)
 
 #Run-Next
