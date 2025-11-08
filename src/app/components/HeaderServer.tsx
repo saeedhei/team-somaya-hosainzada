@@ -6,9 +6,9 @@ export default function HeaderServer() {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     {
-      label: "Services",
+      label: "Projects",
       subMenu: [
-        { label: "Web Development", href: "/services/web" },
+        { label: "Skeleton", href: "/projects/skeleton" },
         { label: "Mobile Apps", href: "/services/mobile" },
       ],
     },

@@ -46,5 +46,5 @@ Use a descriptive name (e.g. feature/add-login, bugfix/fix-typo).
 Step 6: Make your changes, then stage and commit them
 
 git add .
-git commit -m "menu updated"
+git commit -m "skeleton .tsx file renamed and fixrd and menu added"
 git push origin main 
